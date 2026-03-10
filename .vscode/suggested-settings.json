@@ -1,0 +1,49 @@
+{
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.liquid": "liquid"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": ["css", "scss", "postcss"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit",
+    "source.fixAll.prettier": "explicit"
+  },
+  "[css]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": "explicit"
+    }
+  },
+  "[liquid]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "emmet.includeLanguages": {
+    "liquid": "html"
+  },
+  "themeCheck.checkOnSave": true,
+  "cSpell.words": [
+    "endcomment",
+    "endfor",
+    "endstyle",
+    "forloop",
+    "ndash",
+    "pxtorem",
+    "rgba",
+    "stylesheet",
+    "tabindex",
+    "opalsmile"
+  ]
+}

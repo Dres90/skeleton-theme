@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json.schemastore.org/stylelintrc",
+  "extends": ["stylelint-config-standard", "stylelint-config-recess-order"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "block-no-empty": null,
+    "unit-allowed-list": ["rem", "%", "s", "px", "vh", "vw", "deg", "fr"],
+    "selector-max-id": 1,
+    "max-nesting-depth": 3,
+    "color-no-invalid-hex": true,
+    "no-duplicate-selectors": true,
+    "media-feature-range-notation": null,
+    "import-notation": null,
+    "no-descending-specificity": [true, { "severity": "warning" }],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "define-mixin",
+          "mixin",
+          "include",
+          "each",
+          "if",
+          "else",
+          "for",
+          "while",
+          "function",
+          "return"
+        ]
+      }
+    ],
+    "selector-class-pattern": [
+      "^[a-z0-9]+(-[a-z0-9]+)*(__[a-z0-9]+(-[a-z0-9]+)*)?(--[a-z0-9]+(-[a-z0-9]+)*)?$",
+      {
+        "resolveNestedSelectors": true,
+        "message": "Expected class selector to be kebab-case or BEM (Block Element Modifier) syntax."
+      }
+    ],
+    "custom-property-pattern": null,
+    "color-function-alias-notation": null
+  }
+}

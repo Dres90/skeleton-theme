@@ -15,3 +15,15 @@ node_modules/
 ## Release files
 release
 *.zip
+
+## IDE files
+.vscode/settings.json
+
+## Node.js files
+.nvmrc
+*.css.map
+*.js.map
+assets/main.js.map
+
+## CLAUDE files
+CLAUDE.md

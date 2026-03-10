@@ -1,0 +1,41 @@
+{
+  "version": "0.2",
+  "ignorePaths": [],
+  "dictionaryDefinitions": [],
+  "dictionaries": [],
+  "words": [
+    "autocorrect",
+    "currentcolor",
+    "endcapture",
+    "endcase",
+    "endjavascript",
+    "endschema",
+    "gsap",
+    "Klaviyo",
+    "linklist",
+    "metafields",
+    "metaobjects",
+    "myshopify",
+    "playhead",
+    "Spiderfier",
+    "Turkiye",
+    "Tweens",
+    "whyte",
+    "Whyte",
+    "zipcodes"
+  ],
+  "ignoreWords": [
+    "Bellwood",
+    "Binns",
+    "Knowlton",
+    "Taylorsville",
+    "autocapitalize",
+    "childlink",
+    "haspopup",
+    "hexrgba",
+    "linecap",
+    "metaobject",
+    "noindex"
+  ],
+  "import": []
+}

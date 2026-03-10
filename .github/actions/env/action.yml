@@ -1,0 +1,33 @@
+---
+name: Set environment variables
+description: Set ENVIRONMENT and determine other variables
+
+outputs:
+  name:
+    description: 'The determined environment name'
+    value: ${{ steps.environment.outputs.name }}
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Determine the current environment
+      shell: bash -eo pipefail {0}
+      id: environment
+      run: |
+        env | grep GITHUB_
+
+        case "${{ github.head_ref || github.ref_name }}" in
+          production)
+            environment="production"
+            ;;
+          stage)
+            environment="stage"
+            ;;
+          *)
+            environment="dev"
+            ;;
+        esac
+
+        echo "ENVIRONMENT=${environment}" >> "$GITHUB_ENV"
+        echo "name=${environment}" >> "$GITHUB_OUTPUT"
+        echo "Environment is: ${environment}"

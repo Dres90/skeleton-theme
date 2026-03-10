@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "Shopify.theme-check-vscode",
+    "killalau.vscode-liquid-snippets",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "pranaygp.vscode-css-peek",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

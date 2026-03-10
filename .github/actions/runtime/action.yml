@@ -1,0 +1,40 @@
+---
+name: Install runtimes
+description: Install the required runtimes and related base dependencies
+
+inputs:
+  ruby:
+    description: 'Install Ruby'
+    default: 'false'
+  node_js:
+    description: 'Install Node.js'
+    default: 'true'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Determine versions
+      id: get_version
+      shell: bash -eo pipefail {0}
+      run: |
+        echo "" >> $GITHUB_OUTPUT
+
+    - name: Install Ruby
+      if: ${{ inputs.ruby == 'true' }}
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.3
+        bundler-cache: false
+
+    - name: Install Node.js
+      if: ${{ inputs.node_js == 'true' }}
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: '.node-version'
+
+    - name: Show tooling information
+      shell: bash -eo pipefail {0}
+      run: |
+        set -x
+
+        node --version
