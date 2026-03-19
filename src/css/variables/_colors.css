@@ -1,0 +1,4 @@
+:root {
+  --color-black: #000;
+  --text-primary: var(--color-black);
+}

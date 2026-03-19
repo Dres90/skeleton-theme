@@ -1,0 +1,18 @@
+/* Define custom media queries using @custom-media */
+
+@custom-media --media-sm (width <= $breakpoint-sm);
+@custom-media --media-md (width > $breakpoint-sm ); /* 601px and up (960) */
+@custom-media --media-lg (width > $breakpoint-md); /* 961px and up (1439) */
+@custom-media --media-nav-lg (width >= $breakpoint-nav-md); /* 1024px and up */
+
+/* Typography specific media query: 1281px and up */
+@custom-media --media-typography-desktop (width > $breakpoint-lg-typography);
+
+/* 1441px and up */
+@custom-media --media-xl (width > $breakpoint-lg);
+
+/* 1921px and up */
+@custom-media --media-xxl (width > $breakpoint-xl);
+
+/* 2601px and up */
+@custom-media --media-xxxl (width > $breakpoint-xxl);

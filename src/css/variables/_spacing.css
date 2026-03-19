@@ -1,0 +1,11 @@
+:root {
+  --spacing-micro-1: 28px;
+
+  @media (--media-lg) {
+    --spacing-micro-1: 40px;
+  }
+
+  @media (--media-xl) {
+    --spacing-micro-1: 64px;
+  }
+}

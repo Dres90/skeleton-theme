@@ -1,0 +1,7 @@
+@define-mixin button-base-style {
+  font-family: var(--font-primary);
+
+  &:hover {
+    cursor: pointer;
+  }
+}

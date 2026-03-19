@@ -1,0 +1,67 @@
+/* Base styles */
+/* _variables.css */
+:root {
+  --spacing-micro-1: 28px;
+}
+@media (min-width: 960.02px) {
+:root {
+    --spacing-micro-1: 40px
+}
+  }
+@media (min-width: 1440.02px) {
+:root {
+    --spacing-micro-1: 64px
+}
+  }
+:root {
+    /* Fonts */
+    --font-whyte: 'ABC Whyte', sans-serif;
+    --font-primary: var(--font-halyard-text);
+}
+:root {
+  --color-black: #000;
+  --text-primary: var(--color-black);
+}
+:root {
+  /* Variables */
+  --font-size-base: 16px;
+  --transition-duration: 0.15s;
+  --transition-duration-long: 0.2s;
+  --transition-easing: ease-out;
+}
+/* Layout */
+html {
+  scroll-behavior: smooth;
+}
+/* Globals */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+}
+header a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-foreground);
+    -webkit-text-decoration: none;
+    text-decoration: none;
+  }
+header a sup {
+    position: absolute;
+    left: 100%;
+    max-width: var(--page-margin);
+    overflow: hidden;
+  }
+header svg {
+    width: 2rem;
+  }
+header .header__menu,
+  header .header__icons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+/*# sourceMappingURL=main.css.map */

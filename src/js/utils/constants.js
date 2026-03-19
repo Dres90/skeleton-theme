@@ -1,0 +1,9 @@
+export const TRANSITION_DURATION = 0.15;
+export const TRANSITION_DURATION_LONG = 0.2;
+export const TRANSITION_EASING = 'ease-out';
+
+export default {
+  TRANSITION_DURATION,
+  TRANSITION_DURATION_LONG,
+  TRANSITION_EASING,
+};

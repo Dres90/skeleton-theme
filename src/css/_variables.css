@@ -1,0 +1,12 @@
+/* _variables.css */
+@import "./variables/_spacing.css";
+@import "./variables/_fonts.css";
+@import "./variables/_colors.css";
+
+:root {
+  /* Variables */
+  --font-size-base: 16px;
+  --transition-duration: 0.15s;
+  --transition-duration-long: 0.2s;
+  --transition-easing: ease-out;
+}
